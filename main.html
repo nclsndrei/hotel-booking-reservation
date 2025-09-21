@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Luxury hotel booking with pool, spa, and exclusive amenities">
+  <title>Crown Hotel</title>
+
+  <!--1. CDN Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+
+    <a class="navbar-brand" href="#">
+      <img src="crown-logo-removebg.png" alt="Crown Hotel Logo" width="50" height="50">
+    </a>
+
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="main-navigation">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="#amenities">Amenities</a>
+
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="#about">About</a>
+
+        </li>
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="#contact">Contact</a>
+
+        </li>
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#reservationModal">Reserve Now</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <header class="page-header header container-fluid">
+    <div class="overlay"></div>
+
+    <div class="logo">
+      <img src="crown-logo-removebg.png" alt="Crown Hotel Logo">
+    </div>
+
+    <div class="description">
+      <h1>CROWN HOTEL</h1>
+      <p>An Exclusive Experience of Luxury, Comfort, and Elegance</p>
+
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#reservationModal">
+        Book Now</button>
+
+    </div>
+  </header>
+  <section id="amenities" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Amenities</h2>
+      <div class="row">
+        <!-- Amenity Item -->
+        <div class="col-6 col-md-3 mb-4">
+          <img src="pool.png" alt="Pool" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Pool Bar Resort</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="spa.png" alt="Spa" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Escape to Serenity Spa & Wellness</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="gym.png" alt="Gym" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Feel the Burn Fitness Center</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="wifi.png" alt="WiFi" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Free Wi-Fi</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="parking.png" alt="Parking" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Free Parking</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="restaurant.png" alt="Restaurant" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Cheers Restaurant & Bar</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="room-service.png" alt="Room Service" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>24/7 Room Service</h6>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="event.png" alt="Events" class="amenity-icon img-fluid mb-2" loading="lazy">
+          <h6>Royal Event Halls</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4 text-center">About Crown Hotel</h2>
+      <p>Welcome to Crown Hotel, where luxury meets comfort in the heart of the city. Our hotel offers a unique blend
+        of modern amenities and classic elegance, ensuring an unforgettable stay for both business and leisure
+        travelers.
+        From our state-of-the-art fitness center to our exquisite dining options, every aspect of Crown Hotel is
+        designed
+        to provide an exceptional experience. Whether you're here for a weekend getaway or an extended stay, our
+        dedicated staff is committed to making your visit truly memorable. Discover the perfect balance of
+        sophistication
+        and relaxation at Crown Hotel.</p>
+    </div>
+  </section>
+
+  <!--FOOTER MOYA-->
+  <footer>
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="font-weight-bold mb-3">Contact Us</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <!-- no email validation: plain text -->
+            <input id="email" type="email" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- TWO-COLUMN FOOTER -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h6 class="mb-2">Hotel Name</h6>
+            <p class="mb-1">99 Cubao, Quezon City</p>
+            <p class="mb-1">Phone: (08) 892-7111</p>
+            <p class="mb-0">Email: PMS@hotel.com</p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="mb-2">Quick Links</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center small mt-3">© <span id="year"></span> Crown Hotel</div>
+      </div>
+    </footer>
+
+    <!-- FEEDBACK MODAL -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="feedbackTitle">Notice</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="feedbackBody"></div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="reservationTitle">Book Your Stay</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <form id="reservation-form">
+            <!-- Date Inputs -->
+            <div class="form-group">
+              <label for="checkin">Check-in</label>
+              <input type="date" class="form-control" id="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out</label>
+              <input type="date" class="form-control" id="checkout">
+            </div>
+
+            <!-- Guest Information -->
+            <div class="form-group">
+              <label for="guestName">Full Name</label>
+              <input type="text" class="form-control" id="guestName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="guestEmail">Email</label>
+              <input type="email" class="form-control" id="guestEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="guestPhone">Phone Number</label>
+              <input type="tel" class="form-control" id="guestPhone" placeholder="Enter your phone number">
+            </div>
+
+            <!-- Guest Selectors -->
+            <div class="form-group">
+              <label>Adults</label>
+              <div class="input-group guest-selector">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-guest minus" data-target="adults">−</button>
+                </div>
+                <input type="text" class="form-control text-center" id="adults" value="1" readonly>
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-guest plus" data-target="adults">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Children</label>
+              <div class="input-group guest-selector">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-guest minus" data-target="children">−</button>
+                </div>
+                <input type="text" class="form-control text-center" id="children" value="0" readonly>
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-guest plus" data-target="children">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Rooms</label>
+              <div class="input-group guest-selector">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-guest minus" data-target="rooms">−</button>
+                </div>
+                <input type="text" class="form-control text-center" id="rooms" value="1" readonly>
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-guest plus" data-target="rooms">+</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-group">
+          <label for="roomType">Room Type</label>
+          <select class="form-control" id="roomType">
+            <option value="">Select a room type</option>
+            <option value="Standard">Standard Room</option>
+            <option value="Deluxe">Deluxe Room</option>
+            <option value="Suite">Suite</option>
+          </select>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" id="confirmReservation" class="btn btn-success">Confirm Reservation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
+  <!--2. JQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!--3. JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <!--Custom JS-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

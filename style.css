@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+ body {
+   padding: 0;
+   margin: 0;
+   background: #f2f6e9;
+   font-family: 'Playfair', sans-serif;
+ }
+
+ @font-face {
+   font-family: 'Playfair';
+   font-style: normal;
+   font-weight: 400;
+   /* For the regular weight */
+   font-display: swap;
+   /* Controls font loading behavior */
+   src: url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap') format('woff2'),
+     /* Modern browsers */
+ }
+
+ /*--- navigation bar ---*/
+ html {
+   scroll-behavior: smooth;
+ }
+
+ .nav-link.active {
+   color: #CA9C57 !important;
+ }
+
+ .navbar {
+   background: #0a1a2f;
+ }
+
+ .nav-link,
+ .navbar-brand {
+   color: #fff;
+   cursor: pointer;
+   font-size: 1.5rem;
+ }
+
+ .nav-link {
+   margin-right: 1em !important;
+ }
+
+ .nav-link:hover {
+   color: #CA9C57;
+ }
+
+ .navbar-collapse {
+   justify-content: flex-end;
+ }
+
+ .header {
+   background-image: url('crown-bg.png');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+ }
+
+ .overlay {
+   position: absolute;
+   min-height: 100%;
+   min-width: 100%;
+   left: 0;
+   top: 0;
+   background: rgba(0, 0, 0, 0.6);
+ }
+
+ .logo {
+   position: absolute;
+   top: 100px;
+   /* distance from the top */
+   left: 50%;
+   /* center horizontally */
+   transform: translateX(-50%);
+   z-index: 2;
+   /* keep it above overlay */
+ }
+
+ .logo img {
+   height: 80px;
+   /* adjust size */
+   width: auto;
+   /* keep proportions */
+ }
+
+
+ .description {
+   left: 50%;
+   position: absolute;
+   top: 45%;
+   transform: translate(-50%, -55%);
+   text-align: center;
+ }
+
+ .description h1 {
+   font-size: 8rem;
+   line-height: 1.2;
+   color: #CA9C57;
+ }
+
+ .highlight {
+   color: yellow;
+ }
+
+ .description p {
+   color: #fff;
+   font-size: 1.5rem;
+   line-height: 1.5;
+ }
+
+ .description button {
+   border: 1px solid #CA9C57;
+   background: #CA9C57;
+   border-radius: 0;
+   color: #fff;
+   font-size: 1.2rem;
+ }
+
+ .description button:hover {
+   border: 1px solid #fff;
+   background: #fff;
+   color: #000;
+ }
+
+
+ .modal-content {
+   border-radius: 12px;
+   border: 2px solid #CA9C57;
+ }
+
+ .modal-header {
+   background: #343a40;
+   color: white;
+   border-bottom: 2px solid #CA9C57;
+ }
+
+ .modal-footer {
+   border-top: 2px solid #CA9C57;
+ }
+
+
+ .btn-guest {
+   background: #CA9C57;
+   border: none;
+   color: black;
+   font-weight: bold;
+   width: 40px;
+   height: 40px;
+   line-height: 1;
+   border-radius: 8px;
+   transition: 0.2s;
+ }
+
+ .btn-guest:hover {
+   background: #e0a800;
+   color: white;
+ }
+
+
+ .guest-selector input {
+   max-width: 60px;
+   font-weight: bold;
+   font-size: 1.1rem;
+ }
+
+
+ .btn-success {
+   background-color: #343a40 !important;
+   border: 2px solid #ffc107 !important;
+   color: #ffc107 !important;
+   font-weight: bold;
+ }
+
+ .btn-success:hover {
+   background-color: #ffc107 !important;
+   color: black !important;
+ }
+
+ #amenities h2 {
+   font-weight: bold;
+   margin-bottom: 30px;
+   color: #343a40;
+ }
+
+ .amenity-icon {
+   width: 100%;
+   height: auto;
+   max-width: 200px;
+   object-fit: contain;
+   filter: grayscale(20%);
+   transition: all 0.3s ease;
+ }
+
+ .amenity-icon:hover {
+   transform: scale(1.1);
+   filter: grayscale(0%);
+ }
+
+ #amenities h6 {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: #000;
+   font-style: bold;
+ }
+
+ /*  Foot */
+ .footer {
+   background: #0b1220;
+   color: #e2e8f0;
+ }
+
+ .footer a {
+   color: #e2e8f0;
+   text-decoration: none;
+ }
+
+ .footer a:hover {
+   text-decoration: underline;
+ }
+
+ /* media query */
+ @media (max-width: 768px) {
+   .footer .row {
+     text-align: center;
+   }
+ }
+
+ #backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;            
+  z-index: 9999;
+  background-color: #CA9C57; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#backToTop:hover {
+  background-color: #e0a800;
+}

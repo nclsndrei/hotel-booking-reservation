@@ -7,12 +7,15 @@
   <meta name="description" content="Luxury hotel booking with pool, spa, and exclusive amenities">
   <title>Crown Hotel</title>
 
-  <!--1. CDN Bootstrap-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-  <!--Custom CSS-->
-  <link rel="stylesheet" href="style.css">
+<!-- jQuery UI CSS (needed to style datepicker, accordion, dialog) -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<!-- Your own CSS -->
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -132,6 +135,22 @@
         and relaxation at Crown Hotel.</p>
     </div>
   </section>
+
+  <section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Frequently Asked Questions</h2>
+    <div id="accordion">
+      <h3>What time is check-in?</h3>
+      <div><p>Check-in is from 2:00 PM onwards.</p></div>
+
+      <h3>What time is check-out?</h3>
+      <div><p>Check-out is until 11:00 AM.</p></div>
+
+      <h3>Do you allow pets?</h3>
+      <div><p>Sorry, no pets are allowed.</p></div>
+    </div>
+  </div>
+</section>
 
   <!--FOOTER MOYA-->
   <footer>
@@ -302,23 +321,29 @@
     </div>
   </div>
 
+  <div id="specialOffer" title="Special Offer" style="display:none;">
+    <p>Book today and get <b>20% off</b> your first night!</p>
+  </div>
+
+
   <!-- Back to Top Button -->
-  <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+  <button type = "button" id="backToTop" title="Go to top">↑</button>
 
-  <!--2. JQuery-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <!--3. JavaScript-->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <!-- jQuery (full build, required for UI and effects) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <!--Custom JS-->
-  <script src="script.js"></script>
+<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<!-- Popper.js (required by Bootstrap 4) -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<!-- Your custom JavaScript -->
+<script src="script.js"></script>
+
 
 </body>
 
